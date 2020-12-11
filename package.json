@@ -1,0 +1,36 @@
+{
+  "name": "mytodolist",
+  "version": "1.0.0",
+  "description": "A simpe To-do list",
+  "main": "app.js",
+  "scripts": {
+    "start-dev": "nodemon --exec babel-node app.js",
+    "start": "node dist/app.js",
+    "build": "babel app.js -d dist",
+    "lint": "eslint --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amaechi Chisom",
+  "license": "ISC",
+  "engines": {
+    "node": "12.19.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.7",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
