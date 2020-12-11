@@ -228,4 +228,8 @@ div {
     .main-header {
         border-radius: 0;
     }
+
+    .main-list {
+        overflow-y: overlay;
+    }
 }
