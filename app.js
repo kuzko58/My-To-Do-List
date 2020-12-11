@@ -37,7 +37,7 @@ const item2 = new Item({
 });
 
 const item3 = new Item({
-  name: 'Use "✔" to cross out a task, or "X" to delete it',
+  name: 'Use "✓" to cross out a task, or "✕" to delete it',
   complete: false,
 });
 

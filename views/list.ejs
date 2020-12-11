@@ -12,9 +12,9 @@
                 <p class="list-item-p <%= item.complete ? 'fade' : '' %>"><%= item.name %></p>
                 <div class="list-item-action">
                     <button name="<%= item.id %>"
-                        class="complete-button <%= item.complete ? 'ticked' : '' %> btn sqr btn-sm lt-bg shadow-fx-2">✔</button></button>
+                        class="complete-button <%= item.complete ? 'ticked' : '' %> btn sqr btn-sm lt-bg shadow-fx-2">✓</button></button>
 
-                    <button name="<%= item.id %>" class="delete-button btn sqr btn-sm lt-bg shadow-fx-2">X</button>
+                    <button name="<%= item.id %>" class="delete-button btn sqr btn-sm lt-bg shadow-fx-2">✕</button>
                 </div>
             </div>
         </form>
