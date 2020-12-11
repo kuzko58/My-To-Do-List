@@ -175,7 +175,7 @@ div {
     outline: none;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgba(39, 111, 126, 0.1);
+    border-bottom: 1px solid var(--m-yellow-light);
     color: var(--m-blue);
     font-family: 'Montserrat';
     font-size: 1rem;
