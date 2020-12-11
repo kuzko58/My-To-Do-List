@@ -1,4 +1,4 @@
-# AutoMart (Master)
+# My To-Do List (Master)
 
 This is the master branch for hosting the app
 
