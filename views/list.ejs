@@ -1,6 +1,6 @@
 <%- include('partials/header') %>
 
-<div class="container shadow-fx-1">
+<div class="container">
     <div class="main-header bl-bg">
         <h1>My To-Do List</h1>
         <p><%= day %></p>
@@ -12,10 +12,10 @@
                 <p class="list-item-p <%= item.complete ? 'fade' : '' %>"><%= item.name %></p>
                 <div class="list-item-action">
                     <button name="<%= item.id %>"
-                        class="complete-button <%= item.complete ? 'ticked' : '' %> btn sqr btn-sm lt-bg shadow-fx-2"><i
-                            class="<%= item.complete ? 'fas fa-check-square' : 'far fa-check-square' %>"></i></button></button>
+                        class="complete-button <%= item.complete ? 'ticked' : '' %> btn sqr btn-sm lt-bg"><i
+                            class="<%= item.complete ? 'fas fa-check-square' : 'far fa-check-square' %>"></i></button>
 
-                    <button name="<%= item.id %>" class="delete-button btn sqr btn-sm lt-bg shadow-fx-2"><i
+                    <button name="<%= item.id %>" class="delete-button btn sqr btn-sm lt-bg"><i
                             class="far fa-trash-alt"></i></button>
                 </div>
             </div>
