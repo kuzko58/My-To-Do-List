@@ -58,7 +58,7 @@ div {
 }
 
 .btn-lg:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .btn-sm {
@@ -107,14 +107,14 @@ div {
 
 .main-header h1 {
     font-size: 2.5rem;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .main-header p {
     border: none;
     color: var(--m-light);
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     opacity: 0.5;
     padding: 10px 0px 0px;
     width: 100%;
