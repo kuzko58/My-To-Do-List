@@ -8,6 +8,8 @@ var _mongoose = _interopRequireDefault(require("mongoose"));
 
 var _debug = _interopRequireDefault(require("debug"));
 
+require("dotenv/config");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var debug = (0, _debug["default"])('mytodolist');
@@ -17,7 +19,7 @@ app.use(_bodyParser["default"].urlencoded({
   extended: true
 }));
 app.use(_express["default"]["static"]('public'));
-var password = 'colonel09';
+var password = process.env.SECRET_KEY;
 
 _mongoose["default"].connect("mongodb+srv://admin-chisom:".concat(password, "@cluster0.dkiie.mongodb.net/mytodolistDB"), {
   useNewUrlParser: true,
@@ -36,11 +38,11 @@ var item1 = new Item({
   complete: false
 });
 var item2 = new Item({
-  name: 'Type in a task and use "+" to add it to list',
+  name: 'Add a task to get started',
   complete: false
 });
 var item3 = new Item({
-  name: 'Use "✔" to cross out a task, or "X" to delete it',
+  name: 'Delete or cross out a task when done',
   complete: false
 });
 var defaultItems = [item1, item2, item3];

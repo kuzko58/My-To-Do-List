@@ -32,12 +32,12 @@ const item1 = new Item({
 });
 
 const item2 = new Item({
-  name: 'Type in a task and use "+" to add it to list',
+  name: 'Add a task to get started',
   complete: false,
 });
 
 const item3 = new Item({
-  name: 'Use "✓" to cross out a task, or "✕" to delete it',
+  name: 'Delete or cross out a task when done',
   complete: false,
 });
 

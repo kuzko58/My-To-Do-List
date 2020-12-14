@@ -1,20 +1,22 @@
 <%- include('partials/header') %>
 
 <div class="container shadow-fx-1">
-    <div class="main-header yl-bg">
+    <div class="main-header bl-bg">
         <h1>My To-Do List</h1>
         <p><%= day %></p>
     </div>
     <div class="main-list">
         <% items.forEach ( item => { %>
-        <form id="<%= item.id %>" class="list-item-form" action="" method="POST">
+        <form id="<%= item.id %>" action="" method="POST">
             <div class="list-item">
                 <p class="list-item-p <%= item.complete ? 'fade' : '' %>"><%= item.name %></p>
                 <div class="list-item-action">
                     <button name="<%= item.id %>"
-                        class="complete-button <%= item.complete ? 'ticked' : '' %> btn sqr btn-sm lt-bg shadow-fx-2">✓</button></button>
+                        class="complete-button <%= item.complete ? 'ticked' : '' %> btn sqr btn-sm lt-bg shadow-fx-2"><i
+                            class="<%= item.complete ? 'fas fa-check-square' : 'far fa-check-square' %>"></i></button></button>
 
-                    <button name="<%= item.id %>" class="delete-button btn sqr btn-sm lt-bg shadow-fx-2">✕</button>
+                    <button name="<%= item.id %>" class="delete-button btn sqr btn-sm lt-bg shadow-fx-2"><i
+                            class="far fa-trash-alt"></i></button>
                 </div>
             </div>
         </form>
@@ -22,7 +24,7 @@
     </div>
     <form action="/" method="POST" class="add-item-box row">
         <input class="main-input" type="text" name="newItem" placeholder="New Task" autocomplete="off" required>
-        <button class="main-button btn rnd btn-lg yl-bg shadow-fx-1" type="submit" name="button">+</button>
+        <button class="btn rnd btn-lg bl-bg" type="submit" name="button">+</button>
     </form>
 </div>
 
