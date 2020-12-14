@@ -182,7 +182,6 @@ div {
 }
 
 .main-input {
-    outline: none;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #e3dede;
@@ -191,12 +190,13 @@ div {
     font-size: 1rem;
     font-weight: 500;
     height: 60px;
+    outline: none;
     text-align: center;
     width: calc(90% - 80px);
 }
 
 .main-input::placeholder {
-    color: var(--m-blue-light);
+    color: var(--blue-gray);
 }
 
 
