@@ -63,9 +63,9 @@ div {
     font-size: 1rem;
 }
 
-.lt-bg {
+.clr-bg {
     color: var(--blue-gray-light);
-    background-color: var(--m-light);
+    background-color: transparent;
 }
 
 .bl-bg {
