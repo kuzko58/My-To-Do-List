@@ -21,7 +21,7 @@
 html,
 body {
     background-color: var(--baby-blue);
-    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     width: 100%;
 }
@@ -39,6 +39,7 @@ div {
 
 .btn:hover {
     cursor: pointer;
+    transform: scale(0.95);
 }
 
 .sqr {
@@ -52,26 +53,18 @@ div {
 .btn-lg {
     box-shadow: 2px 2px 4px rgba(128, 128, 128, .5),
         -2px -2px 4px rgba(128, 128, 128, .5);
+    font-family: 'Montserrat';
     font-size: 3rem;
     height: 60px;
     width: 60px;
 }
 
-.btn-lg:hover {
-    transform: scale(0.95);
-}
-
 .btn-sm {
-    border: none;
     font-size: 1rem;
 }
 
-.btn-sm:hover {
-    color: var(--midnight-blue);
-}
-
 .lt-bg {
-    color: var(--blue-gray);
+    color: var(--blue-gray-light);
     background-color: var(--m-light);
 }
 
@@ -89,25 +82,27 @@ div {
 /** ******************* List Components ******************* * */
 
 .container {
-    background: var(--m-light);
+    background: whitesmoke;
     border-radius: 8px;
     box-shadow: 1px 1px 3px rgba(128, 128, 128, .5),
         -1px -1px 3px rgba(128, 128, 128, .5);
     margin: 60px auto 20px;
+    padding: 0 0 20px;
     width: 400px;
 }
 
 .main-header {
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
-    font-family: 'Roboto';
-    padding: 10px 0 5px;
+    font-family: 'Montserrat';
+    padding: 20px 0 10px;
     width: 100%;
 }
 
 .main-header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 200;
+    opacity: 0.9;
 }
 
 .main-header p {
@@ -154,12 +149,13 @@ div {
     display: flex;
     flex-direction: column;
     margin: 2px auto;
-    width: 90%;
+    padding: 0 20px;
+    width: 100%;
 }
 
 .list-item-p {
     color: var(--blue-gray);
-    font-weight: 500;
+    font-weight: 400;
     margin: 10px 0;
     width: 100%;
     word-break: break-all;
@@ -174,29 +170,30 @@ div {
 }
 
 .add-item-box {
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    align-items: center;
+    border-bottom: 1px solid #e3dede;
+    border-top: 0px solid #e3dede;
+    display: flex;
+    height: 80px;
     margin-top: 2px;
-    padding: 20px 0;
     width: 100%;
 }
 
 .main-input {
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #e3dede;
     color: var(--blue-gray);
     font-family: 'Montserrat';
     font-size: 1rem;
-    font-weight: 500;
-    height: 60px;
+    font-weight: 400;
+    height: 100%;
     outline: none;
     text-align: center;
     width: calc(90% - 80px);
 }
 
 .main-input::placeholder {
-    color: var(--blue-gray);
+    color: darkgray;
 }
 
 
@@ -205,6 +202,10 @@ div {
 .fade {
     opacity: .7;
     text-decoration: line-through;
+}
+
+.ticked:hover {
+    color: var(--blue-gray);
 }
 
 .top-shadow {
