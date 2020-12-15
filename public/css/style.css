@@ -225,7 +225,7 @@ div {
 
     html,
     body {
-        background-color: var(--m-light);
+        background-color: whitesmoke;
     }
 
     .container {
