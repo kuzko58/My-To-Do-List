@@ -64,13 +64,13 @@ div {
 }
 
 .clr-bg {
-    color: var(--blue-gray-light);
+    color: var(--blue-gray);
     background-color: transparent;
 }
 
-.bl-bg {
+.yl-bg {
     color: var(--m-light);
-    background-color: var(--blue-gray);
+    background-color: var(--m-yellow);
 }
 
 .row {
@@ -101,7 +101,7 @@ div {
 
 .main-header h1 {
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 300;
     opacity: 0.9;
 }
 
@@ -154,7 +154,7 @@ div {
 }
 
 .list-item-p {
-    color: var(--blue-gray);
+    color: var(--dark-blue);
     font-weight: 400;
     margin: 10px 0;
     width: 100%;
@@ -204,8 +204,8 @@ div {
     text-decoration: line-through;
 }
 
-.ticked:hover {
-    color: var(--blue-gray);
+.ticked {
+    color: var(--m-yellow);
 }
 
 .top-shadow {
