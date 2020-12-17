@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'proxima thin';
+    src: url('../assets/fonts/Proxima Nova ScOsf Thin.otf');
+}
+
+@font-face {
+    font-family: 'proxima Alt Regular';
+    src: url('../assets/fonts/Mark Simonson - Proxima Nova Alt Regular.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova ScOsf Regular';
+    src: url('../assets/fonts/Proxima Nova ScOsf Regular.otf');
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../assets/fonts/Mark Simonson - Proxima Nova Regular.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +41,7 @@
 html,
 body {
     background-color: var(--baby-blue);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Proxima Nova ScOsf Regular', 'Roboto', sans-serif;
     text-align: center;
     width: 100%;
 }
@@ -53,7 +73,7 @@ div {
 .btn-lg {
     box-shadow: 2px 2px 4px rgba(128, 128, 128, .5),
         -2px -2px 4px rgba(128, 128, 128, .5);
-    font-family: 'Montserrat';
+    font-family: 'Proxima Nova ScOsf Regular', 'Montserrat';
     font-size: 3rem;
     height: 60px;
     width: 60px;
@@ -94,7 +114,7 @@ div {
 .main-header {
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
-    font-family: 'Montserrat';
+    font-family: 'proxima thin', 'Montserrat';
     padding: 20px 0 10px;
     width: 100%;
 }
@@ -108,6 +128,7 @@ div {
 .main-header p {
     border: none;
     color: var(--m-light);
+    font-family: 'Proxima Nova ScOsf Regular';
     font-size: 1rem;
     font-weight: 400;
     opacity: 0.5;
@@ -183,7 +204,7 @@ div {
     background-color: transparent;
     border: none;
     color: var(--blue-gray);
-    font-family: 'Montserrat';
+    font-family: 'Proxima Nova ScOsf Regular', 'Montserrat';
     font-size: 1rem;
     font-weight: 400;
     height: 100%;
